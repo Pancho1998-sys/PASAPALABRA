@@ -1,0 +1,91 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+interface MemoryManager {
+  +allocate(pid: string, size: number, policy: AllocationPolicy): boolean
+  +release(pid: string): void
+  +blocks(): readonly MemoryBlock[]
+}
+
+interface Scheduler {
+  +enqueue(process: Process): void
+  +dispatch(): Process
+  +rotate(): void
+}
+
+class Process {
+  -_state: ProcessState
+  -_remainingCpu: number
+  -_quantumConsumed: number
+  -_blockedRemaining: number
+  -_cpuTicksExecuted: number
+  +pid: string
+  +memoryRequired: number
+  +totalCpuTime: number
+  +admit(): void
+  +waitForMemory(): void
+  +dispatch(): void
+  +executeCpuUnit(): void
+  +blockForIo(): void
+  +updateBlocked(): boolean
+  +finish(): void
+  +rotateToReady(): void
+}
+
+class MemoryBlock {
+  +start: number
+  +size: number
+  -ownerPid: string
+  +assign(pid: string): void
+  +release(): void
+  +split(size: number, pid: string): MemoryBlock[]
+}
+
+class ContiguousMemoryManager {
+  -_blocks: MemoryBlock[]
+  +totalSize: number
+  +allocate(pid: string, size: number, policy: AllocationPolicy): boolean
+  +release(pid: string): void
+  +freeMemory(): number
+  +largestFreeBlock(): number
+}
+
+class RoundRobinScheduler {
+  -queue: Process[]
+  -running: Process
+  +quantum: number
+  +enqueue(process: Process): void
+  +dispatch(): Process
+  +onCpuTick(): void
+  +shouldRotate(): boolean
+  +rotate(): void
+}
+
+class MetricsCalculator {
+  +calculate(contextSwitches: number, ticks: number, busyTicks: number): Metrics
+}
+
+class Simulator {
+  -processes: Map
+  -waiting: Process[]
+  -blocked: Process[]
+  -terminated: Process[]
+  -memory: ContiguousMemoryManager
+  -scheduler: RoundRobinScheduler
+  +configure(totalMemory: number, quantum: number): void
+  +registerProcess(...): void
+  +tick(): void
+  +state(): SimulationSnapshot
+  +metrics(): Metrics
+}
+
+MemoryManager <|.. ContiguousMemoryManager
+Scheduler <|.. RoundRobinScheduler
+ContiguousMemoryManager *-- MemoryBlock
+RoundRobinScheduler o-- Process
+Simulator *-- ContiguousMemoryManager
+Simulator *-- RoundRobinScheduler
+Simulator *-- MetricsCalculator
+Simulator o-- Process
+MetricsCalculator --> ContiguousMemoryManager
+@enduml

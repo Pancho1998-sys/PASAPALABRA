@@ -1,0 +1,28 @@
+@startuml
+actor Test
+participant Simulator
+participant MemoryManager
+participant Scheduler
+participant Process
+
+Test -> Simulator: tick()
+Simulator -> Simulator: admitirEsperandoMemoria()
+Simulator -> MemoryManager: allocate(...)
+Simulator -> Simulator: actualizarBloqueados()
+Simulator -> Process: updateBlocked()
+Simulator -> Scheduler: dispatch()
+Scheduler -> Process: dispatch()
+Simulator -> Scheduler: onCpuTick()
+Scheduler -> Process: executeCpuUnit()
+alt CPU = 0
+  Simulator -> Process: finish()
+  Simulator -> MemoryManager: release(pid)
+  Simulator -> Scheduler: clearCurrent()
+else E/S
+  Simulator -> Process: blockForIo()
+  Simulator -> Scheduler: clearCurrent()
+else quantum agotado
+  Simulator -> Scheduler: rotate()
+end
+Simulator -> Simulator: tick++
+@enduml
