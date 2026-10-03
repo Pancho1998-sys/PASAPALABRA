@@ -1,6 +1,34 @@
 # AE2 - Simulador de Gestión de Procesos y Memoria (TypeScript)
 
+![Coverage](https://img.shields.io/badge/Coverage-98.41%25-brightgreen.svg)
+![Tests](https://img.shields.io/badge/Tests-41%20passed-brightgreen.svg)
+
 Este proyecto consiste en un **simulador discreto de gestión de procesos y memoria contigua** implementado en **TypeScript**. El simulador modela la interacción entre la planificación de la CPU (algoritmo Round-Robin) y la gestión de memoria principal (particionamiento dinámico con distintas políticas de ajuste), operando paso a paso mediante ciclos de reloj (*ticks*).
+
+---
+
+## 📊 Cobertura de Pruebas (*Test Coverage*)
+
+El proyecto cuenta con una cobertura general del **98.41%** medida con **Vitest v8**:
+
+| Métrica | Porcentaje |
+| :--- | :---: |
+| **Líneas (Lines)** | **98.41%** |
+| **Sentencias (Statements)** | **98.41%** |
+| **Funciones (Functions)** | **94.44%** |
+| **Ramas (Branches)** | **86.16%** |
+
+### Desglose por Módulo
+
+| Archivo / Módulo | % Líneas | % Ramas | % Funciones | Estado |
+| :--- | :---: | :---: | :---: | :---: |
+| `enums.ts` | 100% | 100% | 100% | Excelente |
+| `memory-manager.ts` | 100% | 86.36% | 100% | Excelente |
+| `metrics.ts` | 100% | 83.33% | 100% | Excelente |
+| `process.ts` | 100% | 72.72% | 88.23% | Excelente |
+| `scheduler.ts` | 100% | 85.71% | 100% | Excelente |
+| `simulator.ts` | 98.14% | 98.00% | 100% | Excelente |
+| `memory-block.ts` | 88.00% | 70.00% | 83.33% | Bueno |
 
 ---
 
