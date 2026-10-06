@@ -12,3 +12,5 @@ export enum AllocationPolicy {
   BEST_FIT = 'Best-Fit',
   WORST_FIT = 'Worst-Fit'
 }
+
+// arranco el tp y creo los estados que puede tener un proceso
