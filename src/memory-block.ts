@@ -33,3 +33,5 @@ export class MemoryBlock {
 // hago que el bloque no pueda arrancar en negativo ni tener tamaño cero
 
 // pongo para saber si el bloque esta libre o quien lo tiene
+
+// hago la funcion para partir el bloque si sobra lugar
