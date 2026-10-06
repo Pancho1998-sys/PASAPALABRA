@@ -77,3 +77,5 @@ export class Process {
     this._state = to;
   }
 }
+
+// empiezo a armar la clase del proceso
