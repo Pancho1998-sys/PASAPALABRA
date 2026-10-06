@@ -29,3 +29,5 @@ export class MemoryBlock {
 }
 
 // empiezo la clase del bloque de memoria
+
+// hago que el bloque no pueda arrancar en negativo ni tener tamaño cero
