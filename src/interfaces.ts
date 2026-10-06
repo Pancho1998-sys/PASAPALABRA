@@ -54,3 +54,5 @@ export interface SimulationSnapshot {
   memory: MemoryView[];
   metrics: Metrics;
 }
+
+// armo las interfaces basicas para no perderme
