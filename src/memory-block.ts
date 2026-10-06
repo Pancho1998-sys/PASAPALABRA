@@ -27,3 +27,5 @@ export class MemoryBlock {
       : [allocated, new MemoryBlock(this.start + allocatedSize, remaining)];
   }
 }
+
+// empiezo la clase del bloque de memoria
