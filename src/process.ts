@@ -91,3 +91,5 @@ export class Process {
 // hago que pase a listo cuando le dan memoria
 
 // si no hay memoria disponible lo mando a esperar
+
+// hago que el proceso gaste cpu cuando le toca el turno
