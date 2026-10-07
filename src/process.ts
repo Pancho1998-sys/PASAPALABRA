@@ -85,3 +85,5 @@ export class Process {
 // reviso que el tiempo de cpu sea mayor a cero
 
 // pongo para guardar si el proceso tiene entrada salida
+
+// hago los getters para poder ver como viene el proceso
