@@ -93,3 +93,5 @@ export class Process {
 // si no hay memoria disponible lo mando a esperar
 
 // hago que el proceso gaste cpu cuando le toca el turno
+
+// reviso si el proceso tiene que frenar por entrada salida
