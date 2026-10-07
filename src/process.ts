@@ -87,3 +87,5 @@ export class Process {
 // pongo para guardar si el proceso tiene entrada salida
 
 // hago los getters para poder ver como viene el proceso
+
+// hago que pase a listo cuando le dan memoria
