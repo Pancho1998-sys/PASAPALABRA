@@ -81,3 +81,5 @@ export class Process {
 // empiezo a armar la clase del proceso
 
 // valido que el proceso tenga nombre y pida memoria positiva
+
+// reviso que el tiempo de cpu sea mayor a cero
