@@ -28,3 +28,5 @@ export class RoundRobinScheduler implements Scheduler {
   }
   public clearCurrent(): void { this.running = undefined; }
 }
+
+// empiezo a programar el planificador round robin
