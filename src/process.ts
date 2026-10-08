@@ -97,3 +97,5 @@ export class Process {
 // reviso si el proceso tiene que frenar por entrada salida
 
 // bloqueo el proceso cuando pide entrada salida
+
+// le voy restando el tiempo de bloqueo en cada vuelta
