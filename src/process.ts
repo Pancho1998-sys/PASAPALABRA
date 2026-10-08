@@ -101,3 +101,5 @@ export class Process {
 // le voy restando el tiempo de bloqueo en cada vuelta
 
 // cuando termina de esperar en entrada salida vuelve a listo
+
+// hago que el proceso termine cuando no le queda mas cpu
