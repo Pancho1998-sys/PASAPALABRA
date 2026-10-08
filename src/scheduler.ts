@@ -30,3 +30,5 @@ export class RoundRobinScheduler implements Scheduler {
 }
 
 // empiezo a programar el planificador round robin
+
+// valido que el quantum no sea cero ni negativo
