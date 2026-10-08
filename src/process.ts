@@ -103,3 +103,5 @@ export class Process {
 // cuando termina de esperar en entrada salida vuelve a listo
 
 // hago que el proceso termine cuando no le queda mas cpu
+
+// si se le termina el quantum vuelve a la cola de listos
