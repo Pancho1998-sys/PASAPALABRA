@@ -32,3 +32,5 @@ export class RoundRobinScheduler implements Scheduler {
 // empiezo a programar el planificador round robin
 
 // valido que el quantum no sea cero ni negativo
+
+// hago la cola de listos y meto los procesos atras
