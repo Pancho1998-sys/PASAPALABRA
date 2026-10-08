@@ -99,3 +99,5 @@ export class Process {
 // bloqueo el proceso cuando pide entrada salida
 
 // le voy restando el tiempo de bloqueo en cada vuelta
+
+// cuando termina de esperar en entrada salida vuelve a listo
