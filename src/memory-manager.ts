@@ -62,3 +62,5 @@ export class ContiguousMemoryManager implements MemoryManager {
     if (cursor !== this.totalSize) throw new Error('La memoria total no coincide');
   }
 }
+
+// empiezo el administrador de memoria contigua
