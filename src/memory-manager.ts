@@ -70,3 +70,5 @@ export class ContiguousMemoryManager implements MemoryManager {
 // valido que el proceso no tenga memoria asignada de antes
 
 // busco todos los huecos libres donde pueda entrar el proceso
+
+// hago el first fit para meter el proceso en el primer hueco que entre
