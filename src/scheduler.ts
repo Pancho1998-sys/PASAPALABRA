@@ -38,3 +38,5 @@ export class RoundRobinScheduler implements Scheduler {
 // saco el primer proceso de la cola para mandarlo a la cpu
 
 // hago que gaste un tick de cpu el proceso que esta corriendo
+
+// me fijo si el proceso se paso del quantum para sacarlo
