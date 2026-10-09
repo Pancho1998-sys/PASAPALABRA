@@ -34,3 +34,5 @@ export class RoundRobinScheduler implements Scheduler {
 // valido que el quantum no sea cero ni negativo
 
 // hago la cola de listos y meto los procesos atras
+
+// saco el primer proceso de la cola para mandarlo a la cpu
