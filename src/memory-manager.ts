@@ -68,3 +68,5 @@ export class ContiguousMemoryManager implements MemoryManager {
 // pongo toda la memoria libre al principio como un solo bloque
 
 // valido que el proceso no tenga memoria asignada de antes
+
+// busco todos los huecos libres donde pueda entrar el proceso
