@@ -36,3 +36,5 @@ export class RoundRobinScheduler implements Scheduler {
 // hago la cola de listos y meto los procesos atras
 
 // saco el primer proceso de la cola para mandarlo a la cpu
+
+// hago que gaste un tick de cpu el proceso que esta corriendo
