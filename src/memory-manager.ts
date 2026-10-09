@@ -64,3 +64,5 @@ export class ContiguousMemoryManager implements MemoryManager {
 }
 
 // empiezo el administrador de memoria contigua
+
+// pongo toda la memoria libre al principio como un solo bloque
