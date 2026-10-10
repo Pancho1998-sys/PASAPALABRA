@@ -72,3 +72,5 @@ export class ContiguousMemoryManager implements MemoryManager {
 // busco todos los huecos libres donde pueda entrar el proceso
 
 // hago el first fit para meter el proceso en el primer hueco que entre
+
+// hago el best fit para buscar el lugar mas chiquito que sirva
