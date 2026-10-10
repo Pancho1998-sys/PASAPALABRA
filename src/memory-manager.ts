@@ -80,3 +80,5 @@ export class ContiguousMemoryManager implements MemoryManager {
 // parto el bloque y meto el pedazo asignado y lo que sobra
 
 // hago para liberar la memoria cuando el proceso termina
+
+// junto el bloque libre con el de atras si tambien esta libre
