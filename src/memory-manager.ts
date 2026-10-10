@@ -78,3 +78,5 @@ export class ContiguousMemoryManager implements MemoryManager {
 // hago el worst fit para meterlo en el hueco mas grande
 
 // parto el bloque y meto el pedazo asignado y lo que sobra
+
+// hago para liberar la memoria cuando el proceso termina
