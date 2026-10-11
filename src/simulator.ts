@@ -118,3 +118,5 @@ export class Simulator {
   private dispatchIfNeeded(): void { if (!this.scheduler.current()) this.scheduler.dispatch(); }
   private ensureStarted(): void { if (!this.started) throw new Error('La simulación no fue configurada'); }
 }
+
+// empiezo la clase del simulador para juntar todo
