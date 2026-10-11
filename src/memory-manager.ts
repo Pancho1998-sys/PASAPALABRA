@@ -88,3 +88,5 @@ export class ContiguousMemoryManager implements MemoryManager {
 // calculo cuanta memoria libre queda sumando los bloques
 
 // busco cual es el bloque libre mas grande que queda
+
+// reviso que todos los bloques esten pegados y sumen el total
