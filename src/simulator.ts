@@ -122,3 +122,5 @@ export class Simulator {
 // empiezo la clase del simulador para juntar todo
 
 // hago la funcion para configurar el tamaño de memoria y el quantum
+
+// hago para registrar un proceso nuevo y ver si entra en memoria
