@@ -16,3 +16,5 @@ export class MetricsCalculator {
     };
   }
 }
+
+// armo para calcular el porcentaje de memoria y cpu que se usa
