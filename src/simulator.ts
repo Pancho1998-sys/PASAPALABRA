@@ -120,3 +120,5 @@ export class Simulator {
 }
 
 // empiezo la clase del simulador para juntar todo
+
+// hago la funcion para configurar el tamaño de memoria y el quantum
