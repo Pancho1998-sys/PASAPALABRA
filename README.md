@@ -13,22 +13,16 @@ El proyecto cuenta con una cobertura general del **98.41%** medida con **Vitest 
 
 | Métrica | Porcentaje |
 | :--- | :---: |
-| **Líneas (Lines)** | **98.41%** |
-| **Sentencias (Statements)** | **98.41%** |
-| **Funciones (Functions)** | **94.44%** |
-| **Ramas (Branches)** | **86.16%** |
+| **Líneas (Lines)** | **90.04%** |
+| **Sentencias (Statements)** | **90.04%** |
+| **Funciones (Functions)** | **94.91%** |
+| **Ramas (Branches)** | **85.47%** |
 
 ### Desglose por Módulo
 
 | Archivo / Módulo | % Líneas | % Ramas | % Funciones | Estado |
 | :--- | :---: | :---: | :---: | :---: |
-| `enums.ts` | 100% | 100% | 100% | Excelente |
-| `memory-manager.ts` | 100% | 86.36% | 100% | Excelente |
-| `metrics.ts` | 100% | 83.33% | 100% | Excelente |
-| `process.ts` | 100% | 72.72% | 88.23% | Excelente |
-| `scheduler.ts` | 100% | 85.71% | 100% | Excelente |
-| `simulator.ts` | 98.14% | 98.00% | 100% | Excelente |
-| `memory-block.ts` | 88.00% | 70.00% | 83.33% | Bueno |
+| `index.ts` | 90.04% | 85.47% | 94.91% | Excelente |
 
 ---
 
@@ -83,15 +77,7 @@ El simulador administra el ciclo de vida completo de los procesos en un sistema 
 
 ```text
 src/
-├── enums.ts             # Estados de procesos y políticas de asignación
-├── interfaces.ts        # Interfaces para bloques de memoria, métricas y snapshots
-├── memory-block.ts      # Representación de bloques y particiones de memoria
-├── memory-manager.ts    # Gestor de memoria contigua y algoritmos First/Best/Worst-Fit
-├── metrics.ts           # Calculador de métricas del sistema
-├── process.ts           # Control de bloque de proceso (PCB) y transiciones
-├── scheduler.ts         # Planificador Round-Robin y cola de listos
-├── simulator.ts         # Motor principal de la simulación (orquestador)
-└── index.ts             # Exportaciones principales del paquete
+└── index.ts             # Implementación completa y unificada del simulador
 ```
 
 ---
